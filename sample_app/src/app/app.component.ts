@@ -5,6 +5,7 @@ import { NavComponent } from "./nav/nav.component";
 import { UserComponent } from "./user/user.component";
 import { TaskComponent } from "./task/task.component";
 import { EMPLOYEE_DATA } from '../assets/employee';
+import { User } from './common/custom_types';
 
 @Component({
   selector: 'app-root',
@@ -13,6 +14,7 @@ import { EMPLOYEE_DATA } from '../assets/employee';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+
   title = 'TaskTrack';
   user: any;
   users = EMPLOYEE_DATA;
@@ -24,5 +26,9 @@ export class AppComponent {
   onSelectedUser(user: any)
   {
     this.user = user;
+  }
+
+  onAddTaskEvent(user: User) {
+    alert("Add Task Event" + user.Name);
   }
 }

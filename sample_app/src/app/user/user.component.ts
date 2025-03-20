@@ -10,6 +10,7 @@ import { User } from '../common/custom_types'
 
 export class UserComponent {
   @Input({ required: true }) user!: User;
+  @Input({ required: true }) selected!: boolean;
   @Output() select = new EventEmitter();
     
   get getUserPhoto()
