@@ -1,4 +1,5 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { User } from '../common/custom_types'
 
 @Component({
   selector: 'app-user',
@@ -19,10 +20,4 @@ export class UserComponent {
   onSelectUser(user: User) {
     this.select.emit(user);
   }
-}
-
-export interface User {
-  Id: number;
-  Name: string;
-  Photo: string;
 }
