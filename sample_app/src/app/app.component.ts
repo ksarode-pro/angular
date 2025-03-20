@@ -13,7 +13,7 @@ import { EMPLOYEE_DATA } from '../assets/employee';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'TimeTrack';
+  title = 'TaskTrack';
   user: any;
   users = EMPLOYEE_DATA;
 
