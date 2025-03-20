@@ -2,14 +2,14 @@
 <div class="container">
     <br>
     <div class="row">
-        <div class="col-md-4 col-lg-4">
+        <div class="col-md-3 col-lg-3">
             <div *ngFor="let user of users;">
-                <app-user (select)="onSelectedUser($event)" [user]="user"></app-user>
+                <app-user (select)="onSelectedUser($event)" [user]="user" [selected]="user.Id === selectedUser?.Id"></app-user>
             </div>
         </div>
-        <div class="col-md-8 col-lg-8ś">
+        <div class="col-md-9 col-lg-9">
             <div *ngIf="selectedUser; else noUser">
-                <app-task [user]="selectedUser"></app-task>
+                <app-task [user]="selectedUser" (addTaskEvent)="onAddTaskEvent($event)"></app-task>
             </div>
             <ng-template #noUser>
                 <div class="alert alert-info">
