@@ -1,12 +1,13 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { NgIf, NgFor } from '@angular/common';
 import { TaskListComponent } from "./task-list/task-list.component";
+import { AddTaskComponent } from "./add-task/add-task.component";
 import { Task, User } from '../common/custom_types';
 import { TASKS_DATA } from '../../assets/tasks';
 
 @Component({
   selector: 'app-task',
-  imports: [TaskListComponent, NgIf, NgFor],
+  imports: [TaskListComponent, NgIf, NgFor, AddTaskComponent],
   templateUrl: './task.component.html',
   styleUrl: './task.component.css'
 })
