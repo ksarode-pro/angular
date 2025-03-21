@@ -32,7 +32,6 @@
               "src/lib/Bootstrap/bootstrap-theme.css"
             ],
             "scripts": [
-              "src/lib/jquery.js",
               "src/lib/Bootstrap/bootstrap.bundle.min.js"
             ],
             "server": "src/main.server.ts",
@@ -102,5 +101,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
