@@ -6,6 +6,7 @@ import { UserComponent } from "./user/user.component";
 import { TaskComponent } from "./task/task.component";
 import { EMPLOYEE_DATA } from '../assets/employee';
 import { User } from './common/custom_types';
+import $ from 'jquery';
 
 @Component({
   selector: 'app-root',
