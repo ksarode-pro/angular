@@ -1,34 +1,36 @@
-<div id="addTaskModal" class="modal">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <form (ngSubmit)="addTaskFormSubmit()" #addTaskForm="ngForm">
-                <div class="modal-header">
-                    <h5 class="modal-title">Add new task</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" (click)="closeAddTaskModal()">
-                        <span aria-hidden="true"></span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <fieldset>
-                        <div>
-                            <label for="task-name" class="form-label mt-4">Name</label>
-                            <input type="input" class="form-control" id="task-name" placeholder="Enter task name" [(ngModel)]="taskName" name="taskName" />
-                        </div>
-                        <div>
-                            <label for="task-desc" class="form-label mt-4">Description</label>
-                            <textarea class="form-control" id="task-desc" rows="3" placeholder="Enter task description" [(ngModel)]="taskDescription" name="taskDescription"></textarea>
-                        </div>
-                        <div>
-                            <label for="task-end" class="form-label mt-4">Due Date</label>
-                            <input class="form-control" id="task-end" rows="3" type="date" [(ngModel)]="taskEndDate" name="taskEndDate" />
-                        </div>
-                    </fieldset>
-                </div>
-                <div class="modal-footer">
-                    <button type="submit" class="btn btn-primary">Save</button> 
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" (click)="closeAddTaskModal()">Close</button>
-                </div>
-            </form>
+<app-shadow>
+    <div id="addTaskModal" class="modal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <form (ngSubmit)="addTaskFormSubmit()" #addTaskForm="ngForm">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Add new task</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" (click)="closeAddTaskModal()">
+                            <span aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <fieldset>
+                            <div>
+                                <label for="task-name" class="form-label mt-4">Name</label>
+                                <input type="input" class="form-control" id="task-name" placeholder="Enter task name" [(ngModel)]="taskName" name="taskName" />
+                            </div>
+                            <div>
+                                <label for="task-desc" class="form-label mt-4">Description</label>
+                                <textarea class="form-control" id="task-desc" rows="3" placeholder="Enter task description" [(ngModel)]="taskDescription" name="taskDescription"></textarea>
+                            </div>
+                            <div>
+                                <label for="task-end" class="form-label mt-4">Due Date</label>
+                                <input class="form-control" id="task-end" rows="3" type="date" [(ngModel)]="taskEndDate" name="taskEndDate" />
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary">Save</button> 
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" (click)="closeAddTaskModal()">Close</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
-</div>
+</app-shadow>
