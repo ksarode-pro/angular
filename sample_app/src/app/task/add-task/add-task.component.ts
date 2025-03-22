@@ -2,10 +2,11 @@ import { Component, EventEmitter, Output } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { type Task } from '../../common/custom_types';
 import $ from 'jquery'
+import { ShadowComponent } from "../../shadow/shadow.component";
 
 @Component({
   selector: 'app-add-task',
-  imports: [ FormsModule ],
+  imports: [FormsModule, ShadowComponent],
   templateUrl: './add-task.component.html',
   styleUrl: './add-task.component.css'
 })
