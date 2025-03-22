@@ -1,6 +1,5 @@
 import { Component, Input } from '@angular/core';
 
-
 @Component({
   selector: 'app-nav',
   imports: [],
@@ -8,6 +7,5 @@ import { Component, Input } from '@angular/core';
   styleUrl: './nav.component.css'
 })
 export class NavComponent {
-  
   @Input({required: true}) app_name!: string;
 }

@@ -30,7 +30,6 @@ export class AppComponent {
   }
 
   onAddTaskEvent(user: User) {
-    alert("Add Task Event" + user.Name);
     $("#addTaskModal").show();
   }
 }
