@@ -6,7 +6,7 @@
         {{ task.Description }}
     </div>
     <div class="card-footer text-muted d-flex justify-content-between align-items-center">
-        {{ task.EndDate }}
+        {{ task.EndDate | date:'fullDate' }}
         <div *ngIf="task.Status == 'Pending'; else finishedTask">
             <button class="btn btn-primary" (click)="finishTask()">Complete</button>
         </div>
