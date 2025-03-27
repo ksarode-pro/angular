@@ -1,11 +1,12 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { NgIf, NgFor, DatePipe } from '@angular/common';
 import { Task } from '../../common/custom_types';
-import { ShadowComponent } from "../../shadow/shadow.component";
+import { ShadowComponent } from "../../shared/shadow/shadow.component";
 
 @Component({
   selector: 'app-task-list',
-  imports: [NgIf, NgFor, DatePipe, ShadowComponent],
+  standalone: false,
+  //imports: [NgIf, NgFor, DatePipe],
   templateUrl: './task-list.component.html',
   styleUrl: './task-list.component.css'
 })

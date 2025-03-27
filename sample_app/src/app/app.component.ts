@@ -1,19 +1,15 @@
 import { Component } from '@angular/core';
-import { NgFor, NgIf } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
-import { NavComponent } from "./nav/nav.component";
-import { UserComponent } from "./user/user.component";
-import { TaskComponent } from "./task/task.component";
 import { EMPLOYEE_DATA } from '../assets/employee';
 import { User } from './common/custom_types';
 import $ from 'jquery';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, NavComponent, UserComponent, TaskComponent, NgFor, NgIf],
+  standalone: false,
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
 
   title = 'TaskTrack';
