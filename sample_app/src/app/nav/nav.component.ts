@@ -2,7 +2,8 @@ import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-nav',
-  imports: [],
+  standalone: false,
+  //imports: [],
   templateUrl: './nav.component.html',
   styleUrl: './nav.component.css'
 })

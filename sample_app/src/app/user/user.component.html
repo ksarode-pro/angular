@@ -1,6 +1,8 @@
-<div class="row m-1">
-    <button class="btn btn-dark text-start" [class.active]="selected" type="button" (click)="onSelectUser(user)">
-        <img [src]="this.getUserPhoto" [title]="user.Name" class="img-round" />
-        {{user.Name}}
-    </button>
-</div>
+<app-shadow>
+    <div class="row m-1">
+        <button class="btn btn-dark text-start" [class.active]="selected" type="button" (click)="onSelectUser(user)">
+            <img [src]="this.getUserPhoto" [title]="user.Name" class="img-round" />
+            {{user.Name}}
+        </button>
+    </div>
+</app-shadow>

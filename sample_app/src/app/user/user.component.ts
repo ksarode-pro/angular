@@ -3,7 +3,7 @@ import { User } from '../common/custom_types'
 
 @Component({
   selector: 'app-user',
-  imports: [],
+  standalone: false,
   templateUrl: './user.component.html',
   styleUrl: './user.component.css'
 })
